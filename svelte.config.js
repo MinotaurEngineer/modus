@@ -5,7 +5,7 @@ export default {
   preprocess: [vitePreprocess()],
   kit: {
     adapter: adapter({
-      fallback: '200.html'
+      fallback: 'index.html'
     }),
     paths: {
       base: '/modus'

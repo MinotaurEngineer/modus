@@ -1,3 +1,5 @@
+export const ssr = false;
+
 const endpoints = ['kinesiology', 'features', 'constants']
 
 export async function load({ fetch }) {
