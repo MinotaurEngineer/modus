@@ -1,0 +1,597 @@
+{
+  "sourceTypes": [
+    {
+      "id": "aast-01",
+      "name": "Meat"
+    },
+    {
+      "id": "aast-02",
+      "name": "Fish"
+    },
+    {
+      "id": "aast-03",
+      "name": "Seeds"
+    },
+    {
+      "id": "aast-04",
+      "name": "Nuts"
+    },
+    {
+      "id": "aast-05",
+      "name": "Legumes"
+    },
+    {
+      "id": "aast-06",
+      "name": "Eggs"
+    },
+    {
+      "id": "aast-07",
+      "name": "Cheese"
+    },
+    {
+      "id": "aast-08",
+      "name": "Milk"
+    }
+  ],
+  "sources": [
+    [
+      {
+        "id": "aas-001",
+        "name": "Beef",
+        "type": "aast-01",
+        "composition": [
+          {
+            "compound": "aac-01",
+            "value": 1200
+          },
+          {
+            "compound": "aac-02",
+            "value": 1500
+          },
+          {
+            "compound": "aac-03",
+            "value": 800
+          },
+          {
+            "compound": "aac-04",
+            "value": 2000
+          },
+          {
+            "compound": "aac-05",
+            "value": 300
+          },
+          {
+            "compound": "aac-06",
+            "value": 3500
+          },
+          {
+            "compound": "aac-07",
+            "value": 2500
+          },
+          {
+            "compound": "aac-08",
+            "value": 1000
+          },
+          {
+            "compound": "aac-09",
+            "value": 1000
+          },
+          {
+            "compound": "aac-10",
+            "value": 1800
+          },
+          {
+            "compound": "aac-11",
+            "value": 3000
+          },
+          {
+            "compound": "aac-12",
+            "value": 3200
+          },
+          {
+            "compound": "aac-13",
+            "value": 900
+          },
+          {
+            "compound": "aac-14",
+            "value": 1500
+          },
+          {
+            "compound": "aac-15",
+            "value": 1200
+          },
+          {
+            "compound": "aac-16",
+            "value": 1100
+          },
+          {
+            "compound": "aac-17",
+            "value": 1400
+          },
+          {
+            "compound": "aac-18",
+            "value": 400
+          },
+          {
+            "compound": "aac-19",
+            "value": 1300
+          },
+          {
+            "compound": "aac-20",
+            "value": 2000
+          }
+        ]
+      },
+      {
+        "id": "aas-002",
+        "name": "Lamb",
+        "type": "aast-01",
+        "composition": [
+          {
+            "compound": "aac-01",
+            "value": 1100
+          },
+          {
+            "compound": "aac-02",
+            "value": 1400
+          },
+          {
+            "compound": "aac-03",
+            "value": 750
+          },
+          {
+            "compound": "aac-04",
+            "value": 1900
+          },
+          {
+            "compound": "aac-05",
+            "value": 280
+          },
+          {
+            "compound": "aac-06",
+            "value": 3400
+          },
+          {
+            "compound": "aac-07",
+            "value": 2400
+          },
+          {
+            "compound": "aac-08",
+            "value": 950
+          },
+          {
+            "compound": "aac-09",
+            "value": 950
+          },
+          {
+            "compound": "aac-10",
+            "value": 1700
+          },
+          {
+            "compound": "aac-11",
+            "value": 2900
+          },
+          {
+            "compound": "aac-12",
+            "value": 3100
+          },
+          {
+            "compound": "aac-13",
+            "value": 850
+          },
+          {
+            "compound": "aac-14",
+            "value": 1400
+          },
+          {
+            "compound": "aac-15",
+            "value": 1100
+          },
+          {
+            "compound": "aac-16",
+            "value": 1000
+          },
+          {
+            "compound": "aac-17",
+            "value": 1300
+          },
+          {
+            "compound": "aac-18",
+            "value": 380
+          },
+          {
+            "compound": "aac-19",
+            "value": 1200
+          },
+          {
+            "compound": "aac-20",
+            "value": 1900
+          }
+        ]
+      },
+      {
+        "id": "aas-003",
+        "name": "Pork",
+        "type": "aast-01",
+        "composition": [
+          {
+            "compound": "aac-01",
+            "value": 1300
+          },
+          {
+            "compound": "aac-02",
+            "value": 1600
+          },
+          {
+            "compound": "aac-03",
+            "value": 850
+          },
+          {
+            "compound": "aac-04",
+            "value": 2100
+          },
+          {
+            "compound": "aac-05",
+            "value": 320
+          },
+          {
+            "compound": "aac-06",
+            "value": 3600
+          },
+          {
+            "compound": "aac-07",
+            "value": 2600
+          },
+          {
+            "compound": "aac-08",
+            "value": 1100
+          },
+          {
+            "compound": "aac-09",
+            "value": 1100
+          },
+          {
+            "compound": "aac-10",
+            "value": 1900
+          },
+          {
+            "compound": "aac-11",
+            "value": 3100
+          },
+          {
+            "compound": "aac-12",
+            "value": 3300
+          },
+          {
+            "compound": "aac-13",
+            "value": 950
+          },
+          {
+            "compound": "aac-14",
+            "value": 1600
+          },
+          {
+            "compound": "aac-15",
+            "value": 1300
+          },
+          {
+            "compound": "aac-16",
+            "value": 1200
+          },
+          {
+            "compound": "aac-17",
+            "value": 1500
+          },
+          {
+            "compound": "aac-18",
+            "value": 420
+          },
+          {
+            "compound": "aac-19",
+            "value": 1400
+          },
+          {
+            "compound": "aac-20",
+            "value": 2100
+          }
+        ]
+      },
+      {
+        "id": "aas-004",
+        "name": "Turkey",
+        "type": "aast-01",
+        "composition": [
+          {
+            "compound": "aac-01",
+            "value": 1400
+          },
+          {
+            "compound": "aac-02",
+            "value": 1700
+          },
+          {
+            "compound": "aac-03",
+            "value": 900
+          },
+          {
+            "compound": "aac-04",
+            "value": 2200
+          },
+          {
+            "compound": "aac-05",
+            "value": 350
+          },
+          {
+            "compound": "aac-06",
+            "value": 3700
+          },
+          {
+            "compound": "aac-07",
+            "value": 2700
+          },
+          {
+            "compound": "aac-08",
+            "value": 1200
+          },
+          {
+            "compound": "aac-09",
+            "value": 1200
+          },
+          {
+            "compound": "aac-10",
+            "value": 2000
+          },
+          {
+            "compound": "aac-11",
+            "value": 3200
+          },
+          {
+            "compound": "aac-12",
+            "value": 3400
+          },
+          {
+            "compound": "aac-13",
+            "value": 1000
+          },
+          {
+            "compound": "aac-14",
+            "value": 1700
+          },
+          {
+            "compound": "aac-15",
+            "value": 1400
+          },
+          {
+            "compound": "aac-16",
+            "value": 1300
+          },
+          {
+            "compound": "aac-17",
+            "value": 1600
+          },
+          {
+            "compound": "aac-18",
+            "value": 450
+          },
+          {
+            "compound": "aac-19",
+            "value": 1500
+          },
+          {
+            "compound": "aac-20",
+            "value": 2200
+          }
+        ]
+      },
+      {
+        "id": "aas-005",
+        "name": "Chicken",
+        "type": "aast-01",
+        "composition": [
+          {
+            "compound": "aac-01",
+            "value": 1500
+          },
+          {
+            "compound": "aac-02",
+            "value": 1800
+          },
+          {
+            "compound": "aac-03",
+            "value": 950
+          },
+          {
+            "compound": "aac-04",
+            "value": 2300
+          },
+          {
+            "compound": "aac-05",
+            "value": 400
+          },
+          {
+            "compound": "aac-06",
+            "value": 3800
+          },
+          {
+            "compound": "aac-07",
+            "value": 2800
+          },
+          {
+            "compound": "aac-08",
+            "value": 1300
+          },
+          {
+            "compound": "aac-09",
+            "value": 1300
+          },
+          {
+            "compound": "aac-10",
+            "value": 2100
+          },
+          {
+            "compound": "aac-11",
+            "value": 3300
+          },
+          {
+            "compound": "aac-12",
+            "value": 3500
+          },
+          {
+            "compound": "aac-13",
+            "value": 1100
+          },
+          {
+            "compound": "aac-14",
+            "value": 1800
+          },
+          {
+            "compound": "aac-15",
+            "value": 1500
+          },
+          {
+            "compound": "aac-16",
+            "value": 1400
+          },
+          {
+            "compound": "aac-17",
+            "value": 1700
+          },
+          {
+            "compound": "aac-18",
+            "value": 500
+          },
+          {
+            "compound": "aac-19",
+            "value": 1600
+          },
+          {
+            "compound": "aac-20",
+            "value": 2300
+          }
+        ]
+      }
+    ]
+  ],
+  "compounds": [
+    {
+      "id": "aac-01",
+      "name": "Alanine",
+      "essential": false,
+      "rda": 75
+    },
+    {
+      "id": "aac-02",
+      "name": "Arginine",
+      "essential": false,
+      "rda": 75
+    },
+    {
+      "id": "aac-03",
+      "name": "Asparagine",
+      "essential": false,
+      "rda": 50
+    },
+    {
+      "id": "aac-04",
+      "name": "Aspartic Acid",
+      "essential": false,
+      "rda": 35
+    },
+    {
+      "id": "aac-05",
+      "name": "Cysteine",
+      "essential": false,
+      "rda": 4.5
+    },
+    {
+      "id": "aac-06",
+      "name": "Glutamic Acid",
+      "essential": false,
+      "rda": 50
+    },
+    {
+      "id": "aac-07",
+      "name": "Glutamine",
+      "essential": false,
+      "rda": 75
+    },
+    {
+      "id": "aac-08",
+      "name": "Glycine",
+      "essential": false,
+      "rda": 37.5
+    },
+    {
+      "id": "aac-09",
+      "name": "Histidine",
+      "essential": true,
+      "rda": 14
+    },
+    {
+      "id": "aac-10",
+      "name": "Isoleucine",
+      "essential": true,
+      "rda": 20
+    },
+    {
+      "id": "aac-11",
+      "name": "Leucine",
+      "essential": true,
+      "rda": 42
+    },
+    {
+      "id": "aac-12",
+      "name": "Lysine",
+      "essential": true,
+      "rda": 38
+    },
+    {
+      "id": "aac-13",
+      "name": "Methionine",
+      "essential": true,
+      "rda": 10.5
+    },
+    {
+      "id": "aac-14",
+      "name": "Phenylalanine",
+      "essential": true,
+      "rda": 25
+    },
+    {
+      "id": "aac-15",
+      "name": "Proline",
+      "essential": false,
+      "rda": 60
+    },
+    {
+      "id": "aac-16",
+      "name": "Serine",
+      "essential": false,
+      "rda": 60
+    },
+    {
+      "id": "aac-17",
+      "name": "Threonine",
+      "essential": true,
+      "rda": 15
+    },
+    {
+      "id": "aac-18",
+      "name": "Tryptophan",
+      "essential": true,
+      "rda": 4
+    },
+    {
+      "id": "aac-19",
+      "name": "Tyrosine",
+      "essential": false,
+      "rda": 100
+    },
+    {
+      "id": "aac-20",
+      "name": "Valine",
+      "essential": true,
+      "rda": 26
+    }
+  ]
+}
