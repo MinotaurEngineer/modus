@@ -1,0 +1,266 @@
+{
+  "seasons": [
+    {
+      "id": "t001-s1",
+      "name": "Spring",
+      "weeks": [
+        12,
+        24
+      ]
+    },
+    {
+      "id": "t001-s2",
+      "name": "Summer",
+      "weeks": [
+        25,
+        37
+      ]
+    },
+    {
+      "id": "t001-s3",
+      "name": "Autumn",
+      "weeks": [
+        38,
+        50
+      ]
+    },
+    {
+      "id": "t001-s4",
+      "name": "Winter",
+      "weeks": [
+        51,
+        11
+      ]
+    }
+  ],
+  "macrocycles": [
+    {
+      "id": "t001-mac1",
+      "name": "Crawl",
+      "season": "t001-s1",
+      "muscles": [
+        "k001-m16",
+        "k001-m05",
+        "k001-m19",
+        "k001-m25"
+      ]
+    },
+    {
+      "id": "t001-mac2",
+      "name": "Jump",
+      "season": "t001-s2",
+      "muscles": [
+        "k001-m24",
+        "k001-m28",
+        "k001-m31",
+        "k001-m29"
+      ]
+    },
+    {
+      "id": "t001-mac3",
+      "name": "Climb",
+      "season": "t001-s3",
+      "muscles": [
+        "k001-m09",
+        "k001-m06",
+        "k001-m11",
+        "k001-m35"
+      ]
+    },
+    {
+      "id": "t001-mac4",
+      "name": "Carry",
+      "season": "t001-s4",
+      "muscles": [
+        "k001-m23",
+        "k001-m24",
+        "k001-m28",
+        "k001-m11"
+      ]
+    }
+  ],
+  "microcycles": [
+    {
+      "id": "t001-mcw1",
+      "effort": 0.25,
+      "reps": 15
+    },
+    {
+      "id": "t001-mcw2",
+      "effort": 0.5,
+      "reps": 12
+    },
+    {
+      "id": "t001-mcw3",
+      "effort": 0.66,
+      "reps": 10
+    },
+    {
+      "id": "t001-mcw4",
+      "effort": 0.75,
+      "reps": 8
+    },
+    {
+      "id": "t001-mcw5",
+      "effort": 0.8,
+      "reps": 6
+    }
+  ],
+  "exercises": [
+    {
+      "id": "t001-mvm1",
+      "name": "Unilateral Cable Pulldown",
+      "target_muscle": "k001-m09"
+    },
+    {
+      "id": "t001-mvm2",
+      "name": "Lat Pulldowns",
+      "target_muscle": "k001-m09"
+    },
+    {
+      "id": "t001-mvm3",
+      "name": "Reverse Grip KB Curl",
+      "target_muscle": "k001-m06"
+    },
+    {
+      "id": "t001-mvm4",
+      "name": "Zottman Curls",
+      "target_muscle": "k001-m06"
+    },
+    {
+      "id": "t001-mvm5",
+      "name": "Shrug",
+      "target_muscle": "k001-m11"
+    },
+    {
+      "id": "t001-mvm6",
+      "name": "Rack Pulls",
+      "target_muscle": "k001-m11"
+    },
+    {
+      "id": "t001-mvm7",
+      "name": "Bar Rolls",
+      "target_muscle": "k001-m35"
+    },
+    {
+      "id": "t001-mvm8",
+      "name": "Wrist Curls",
+      "target_muscle": "k001-m35"
+    },
+    {
+      "id": "t001-mvm9",
+      "name": "Deadlift",
+      "target_muscle": "k001-m23"
+    },
+    {
+      "id": "t001-mvm10",
+      "name": "Seated Row",
+      "target_muscle": "k001-m23"
+    },
+    {
+      "id": "t001-mvm11",
+      "name": "Squat",
+      "target_muscle": "k001-m24"
+    },
+    {
+      "id": "t001-mvm12",
+      "name": "KB Swing",
+      "target_muscle": "k001-m24"
+    },
+    {
+      "id": "t001-mvm13",
+      "name": "Leg Press",
+      "target_muscle": "k001-m28"
+    },
+    {
+      "id": "t001-mvm14",
+      "name": "Weighted Stepup",
+      "target_muscle": "k001-m28"
+    },
+    {
+      "id": "t001-mvm15",
+      "name": "Shrug Dip",
+      "target_muscle": "k001-m11"
+    },
+    {
+      "id": "t001-mvm16",
+      "name": "Farmers Carry",
+      "target_muscle": "k001-m11"
+    },
+    {
+      "id": "t001-mvm17",
+      "name": "Chest Dip",
+      "target_muscle": "k001-m16"
+    },
+    {
+      "id": "t001-mvm18",
+      "name": "Incline Bench",
+      "target_muscle": "k001-m16"
+    },
+    {
+      "id": "t001-mvm19",
+      "name": "Cable Pushdown",
+      "target_muscle": "k001-m05"
+    },
+    {
+      "id": "t001-mvm20",
+      "name": "Skull Crushers",
+      "target_muscle": "k001-m05"
+    },
+    {
+      "id": "t001-mvm21",
+      "name": "Bear Crawl",
+      "target_muscle": "k001-m19"
+    },
+    {
+      "id": "t001-mvm22",
+      "name": "Pallof Press",
+      "target_muscle": "k001-m19"
+    },
+    {
+      "id": "t001-mvm23",
+      "name": "Lateral Banded Walk",
+      "target_muscle": "k001-m25"
+    },
+    {
+      "id": "t001-mvm24",
+      "name": "Lateral Lunge",
+      "target_muscle": "k001-m25"
+    },
+    {
+      "id": "t001-mvm25",
+      "name": "Trap Bar High Pulls",
+      "target_muscle": "k001-m24"
+    },
+    {
+      "id": "t001-mvm26",
+      "name": "Medicine Ball Squats",
+      "target_muscle": "k001-m28"
+    },
+    {
+      "id": "t001-mvm27",
+      "name": "Medicine Ball Wall Shot",
+      "target_muscle": "k001-m28"
+    },
+    {
+      "id": "t001-mvm28",
+      "name": "Lateral Box Jump",
+      "target_muscle": "k001-m31"
+    },
+    {
+      "id": "t001-mvm29",
+      "name": "Lateral Box Shuffle",
+      "target_muscle": "k001-m31"
+    },
+    {
+      "id": "t001-mvm30",
+      "name": "Sprints",
+      "target_muscle": "k001-m29"
+    },
+    {
+      "id": "t001-mvm31",
+      "name": "Hyperextensions",
+      "target_muscle": "k001-m29"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{% assign title = "Navigation" %}
+
+<div
+  class='{{ title | downcase }}'
+  aria-label='{{ title | downcase }}'
+  s1='subgrid pad-block:6 justify-items:end'>
+  <a
+    href="#top"
+    target='_self'
+    s1='span:1..'>
+    {% include icon.jekyll name="wordmark" scale=0.25 %}
+  </a>
+</div>
+
+<style>
+  .{{ title | downcase }} {
+    position: sticky;
+    inset-block-start: 0;
+
+    button {
+      border: none;
+      padding: 0;
+      line-height: 1;
+      background-color: transparent;
+    }
+  }
+</style>

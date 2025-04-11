@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- external styles -->
+    <link rel="stylesheet" href="./styles/ashlar.core.css">
+    <link rel="stylesheet" href="./styles/ashlar.utils.css">
+    <link rel="stylesheet" href="./styles/ashlar.theme.css">
+
+    <!-- scripts -->
+    <script src="./scripts/index.js" async='async'></script>
+
+    <!-- Alpine Core -->
+    <script defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body id='top'>
+    {% include icons.jekyll %}
+    <main s1='grid colcount:6 pad-inline:6'>
+      {% include navigation.jekyll %}
+      {{ content }}
+    </main>
+  </body>
+
+</html>

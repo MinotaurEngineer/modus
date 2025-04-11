@@ -1,0 +1,173 @@
+{% assign title = "Atlas" %}
+
+<div
+  id='{{ title | downcase }}'
+  class='{{ title | downcase }}'
+  aria-label='{{ title | downcase }}'
+  s1='subgrid pad-block:12 gap:6'>
+
+  <div s1='subgrid row-gap:12'>
+    <h2 s1='span:1..'>Joints</h2>
+    {% for joint in site.data.kinesiology.joints %}
+      <div
+        data-joint-id='{{joint.id}}'
+        s1='subgrid span:1.. row-gap:6'
+        id='joint-{{joint.name | replace: " ", "-" |  downcase | strip_newlines }}'>
+        <h2 s1='span:1..'>{{ joint.name }}</h2>
+
+        <div s1='span:1..'>
+          <div s1='pad-block-end:2' font='mono'>Type</div>
+          <div data-fibre-id='{{fibre.id}}' s1='font-size:6'>{{ joint.type }}</div>
+        </div>
+
+        <div s1='span:1..' s3='span:2'>
+          <div s1='pad-block-end:2' font='mono'>Opens with</div>
+          {% if joint.actions.open.size > 0 %}
+            {% for muscleId in joint.actions.open %}
+              {% assign muscle = site.data.kinesiology.muscles | where: "id", muscleId | first %}
+              <a
+                href="#muscle-{{muscle.name | replace: " ", "-" |  downcase | strip_newlines }}"
+                data-fibre-id='{{fibre.id}}'
+                s1='block font-size:6'>{{ muscle.name }}</a>
+            {% endfor %}
+          {% else %}
+            None
+          {% endif %}
+        </div>
+
+        <div s1='span:1..' s3='span:2'>
+          <div s1='pad-block-end:2' font='mono'>Closes with</div>
+          {% if joint.actions.close.size > 0 %}
+            {% for muscleId in joint.actions.close %}
+              {% assign muscle = site.data.kinesiology.muscles | where: "id", muscleId | first %}
+              <a
+                href="#muscle-{{muscle.name | replace: " ", "-" |  downcase | strip_newlines }}"
+                data-fibre-id='{{fibre.id}}'
+                s1='block font-size:6'>{{ muscle.name }}</a>
+            {% endfor %}
+          {% else %}
+            None
+          {% endif %}
+        </div>
+
+        <div s1='span:1..' s3='span:2'>
+          <div s1='pad-block-end:2' font='mono'>Rotated by</div>
+          {% if joint.actions.twist.size > 0 %}
+            {% for muscleId in joint.actions.twist %}
+              {% assign muscle = site.data.kinesiology.muscles | where: "id", muscleId | first %}
+              <a
+                href="#muscle-{{muscle.name | replace: " ", "-" |  downcase | strip_newlines }}"
+                data-fibre-id='{{fibre.id}}'
+                s1='block font-size:6'>{{ muscle.name }}</a>
+            {% endfor %}
+          {% else %}
+            None
+          {% endif %}
+        </div>
+
+      </div>
+    {% endfor %}
+  </div>
+
+  <div s1='subgrid row-gap:12'>
+    <h2 s1='span:1..'>Muscles</h2>
+    {% for muscle in site.data.kinesiology.muscles %}
+      {% assign regionId = muscle.id | split: "-m" | first %}
+      {% assign region = site.data.kinesiology.regions | where: "id", regionId | first %}
+      <div
+        data-muscle-id='{{muscle.id}}'
+        s1='subgrid span:1.. row-gap:6'
+        id="muscle-{{muscle.name | replace: " ", "-" |  downcase | strip_newlines }}">
+        <h2 s1='span:1..'>{{ muscle.name }}</h2>
+        <p s1='span:1..'>{{ muscle.metadata.primaryFunction }}</p>
+
+        <div s1='span:1..' data-joint-id='{{joint.id}}'>
+          <div s1='font-size:4 pad-block-end:2'>Spans joints</div>
+          <div s1='font-size:6'>
+            {% for jointId in muscle.metadata.spans %}
+              {% assign joint = site.data.kinesiology.joints | where: "id", jointId | first %}
+              <a href='#joint-{{joint.name | replace: " ", "-" |  downcase | strip_newlines }}' s1='block'>{{ joint.name }}</a>
+            {% endfor %}
+          </div>
+        </div>
+
+        <h3 s1='span:1..'>Fibre Profile(s)</h3>
+        {% for fibreId in muscle.metadata.fibreTypes %}
+          {% assign fibre = site.data.kinesiology.fibertypes | where: "id", fibreId | first %}
+
+          <!-- Identification and Classification -->
+          <div s1='span:1..'>
+            <div s1='font-size:4 pad-block-end:2' font='mono'>Fibre Type</div>
+            <div data-fibre-id='{{fibre.id}}' s1='font-size:8'>{{ fibre.name }}</div>
+          </div>
+
+          <div s1='span:1..'>
+            <div s1='font-size:4 pad-block-end:2' font='mono'>Function</div>
+            <div s1='font-size:6'>{{ fibre.metadata.function }}</div>
+          </div>
+
+          <div
+            s1='span:1..'
+            s3='span:3'
+            s5='span:2'>
+            <div s1='font-size:4 pad-block-end:2' font='mono'>Energy System</div>
+            <div s1='font-size:6'>{{ fibre.metadata.energySystem }}</div>
+          </div>
+
+          <div
+            s1='span:1..'
+            s3='span:3'
+            s5='span:2'>
+            <div s1='font-size:4 pad-block-end:2' font='mono'>Fatigue Resistance</div>
+            <div s1='font-size:6'>{{ fibre.metadata.fatigue_resistance }}</div>
+          </div>
+
+          <div
+            s1='span:1..'
+            s3='span:3'
+            s5='span:2'>
+            <div s1='font-size:4 pad-block-end:2' font='mono'>Contraction Speed</div>
+            <div s1='font-size:6'>{{ fibre.metadata.contraction_speed }}</div>
+          </div>
+
+          <div s1='span:1..'>
+            <div s1='font-size:4 pad-block-end:2' font='mono'>ATP Regeneration</div>
+            <div s1='font-size:6'>{{ fibre.metadata.ATP_regeneration }}</div>
+          </div>
+
+          <!-- Training-Related Parameters -->
+          <div s1='span:1..' s3='span:2'>
+            <div s1='font-size:4 pad-block-end:2' font='mono'>Training Frequency</div>
+            <div s1='font-size:6'>{{ fibre.metadata.training_frequency[0] }} &dash; {{ fibre.metadata.training_frequency[1] }}</div>
+          </div>
+
+          <div s1='span:1..' s3='span:2'>
+            <div s1='font-size:4 pad-block-end:2' font='mono'>Sets (per session)</div>
+            <div s1='font-size:6'>{{ fibre.metadata.sets[0] }} &dash; {{ fibre.metadata.sets[1] }}</div>
+          </div>
+
+          <div s1='span:1..' s3='span:2'>
+            <div s1='font-size:4 pad-block-end:2' font='mono'>Range (per set)</div>
+            <div s1='font-size:6'>{{ fibre.metadata.range[0] }} &dash; {{ fibre.metadata.range[1] }}</div>
+          </div>
+
+          <div s1='span:1..' s3='span:2'>
+            <div s1='font-size:4 pad-block-end:2' font='mono'>Intensity (%1RM)</div>
+            <div s1='font-size:6'>{{ fibre.metadata.intensity[0] }} &dash; {{ fibre.metadata.intensity[1] }}</div>
+          </div>
+
+          <div s1='span:1..' s3='span:2'>
+            <div s1='font-size:4 pad-block-end:2' font='mono'>Most active around</div>
+            <div s1='font-size:6'>{{ fibre.metadata.heartrate[0] }} &dash; {{ fibre.metadata.heartrate[1] }} bpm</div>
+          </div>
+
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+
+</div>
+
+<style>
+  .{{ title | downcase }} {}
+</style>

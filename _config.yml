@@ -1,0 +1,13 @@
+title: Modus
+description: A daily schedule planner
+baseurl: "/modus"
+url: "https://minotaurengineer.github.io"
+permalink: pretty
+
+github:
+  branch: main
+
+exclude:
+  - scratch.md
+  - todo.md
+  - README.md

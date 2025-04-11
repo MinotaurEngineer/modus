@@ -1,0 +1,1034 @@
+{
+  "name": "kinesiology",
+  "id": "k001",
+  "fibertypes": [
+    {
+      "id": "k001-ft01",
+      "name": "Type IIa",
+      "metadata": {
+        "contraction_speed": "Fast",
+        "energySystem": "Fast Oxidative / Glycolytic",
+        "ATP_regeneration": "Primarily aerobic, can switch to anaerobic",
+        "fatigue_resistance": "Moderate",
+        "function": "Movements requiring moderate energy (e.g., sustained lifting)",
+        "characteristics": "Intermediate between SO and FG fibers, high mitochondria, oxidative",
+        "range": [
+          6,
+          8
+        ],
+        "sets": [
+          3,
+          5
+        ],
+        "training_frequency": [
+          2,
+          3
+        ],
+        "intensity": [
+          70,
+          85
+        ],
+        "heartrate": [
+          100,
+          120
+        ]
+      }
+    },
+    {
+      "id": "k001-ft02",
+      "name": "Type IIx",
+      "metadata": {
+        "contraction_speed": "Fast",
+        "energySystem": "Fast Glycolytic",
+        "ATP_regeneration": "Anaerobic glycolysis",
+        "fatigue_resistance": "Low",
+        "function": "Rapid, forceful contractions",
+        "characteristics": "Large diameter, high glycogen content, fewer mitochondria",
+        "range": [
+          1,
+          5
+        ],
+        "sets": [
+          2,
+          4
+        ],
+        "training_frequency": [
+          1,
+          2
+        ],
+        "intensity": [
+          85,
+          100
+        ],
+        "heartrate": [
+          120,
+          140
+        ]
+      }
+    },
+    {
+      "id": "k001-ft03",
+      "name": "Type I",
+      "metadata": {
+        "contraction_speed": "Slow",
+        "energySystem": "Slow Oxidative",
+        "ATP_regeneration": "Aerobic respiration",
+        "fatigue_resistance": "High",
+        "function": "Maintain posture, isometric contractions, stabilize bones and joints, small frequent movements",
+        "characteristics": "Rich capillary supply, numerous mitochondria, high aerobic respiratory enzymes",
+        "range": [
+          12,
+          20
+        ],
+        "training_frequency": [
+          3,
+          5
+        ],
+        "sets": [
+          3,
+          6
+        ],
+        "intensity": [
+          50,
+          70
+        ],
+        "heartrate": [
+          80,
+          100
+        ]
+      }
+    }
+  ],
+  "joints": [
+    {
+      "id": "k001-j01",
+      "name": "Neck (Cervical Spine)",
+      "type": "Pivot",
+      "actions": {
+        "close": [
+          "k001-m01"
+        ],
+        "open": [
+          "k001-m02",
+          "k001-m11"
+        ],
+        "twist": [
+          "k001-m01",
+          "k001-m11"
+        ]
+      }
+    },
+    {
+      "id": "k001-j02",
+      "name": "Shoulder",
+      "type": "Ball-and-Socket",
+      "actions": {
+        "close": [
+          "k001-m09",
+          "k001-m10",
+          "k001-m16"
+        ],
+        "open": [
+          "k001-m03",
+          "k001-m51",
+          "k001-m14"
+        ],
+        "twist": [
+          "k001-m15",
+          "k001-m14",
+          "k001-m46"
+        ]
+      }
+    },
+    {
+      "id": "k001-j03",
+      "name": "Elbow",
+      "type": "Hinge",
+      "actions": {
+        "close": [
+          "k001-m06",
+          "k001-m07",
+          "k001-m08"
+        ],
+        "open": [
+          "k001-m05",
+          "k001-m53"
+        ],
+        "twist": []
+      }
+    },
+    {
+      "id": "k001-j04",
+      "name": "Wrist",
+      "type": "Condyloid",
+      "actions": {
+        "close": [
+          "k001-m35",
+          "k001-m36"
+        ],
+        "open": [
+          "k001-m37",
+          "k001-m38",
+          "k001-m39"
+        ],
+        "twist": [
+          "k001-m40",
+          "k001-m41",
+          "k001-m42"
+        ]
+      }
+    },
+    {
+      "id": "k001-j05",
+      "name": "Upper Back (Thoracic Spine)",
+      "type": "Gliding",
+      "actions": {
+        "close": [],
+        "open": [
+          "k001-m23",
+          "k001-m11"
+        ],
+        "twist": [
+          "k001-m13",
+          "k001-m11"
+        ]
+      }
+    },
+    {
+      "id": "k001-j06",
+      "name": "Lower Back (Lumbar Spine)",
+      "type": "Gliding",
+      "actions": {
+        "close": [
+          "k001-m19",
+          "k001-m20"
+        ],
+        "open": [
+          "k001-m23"
+        ],
+        "twist": [
+          "k001-m21",
+          "k001-m22"
+        ]
+      }
+    },
+    {
+      "id": "k001-j07",
+      "name": "Hip",
+      "type": "Ball-and-Socket",
+      "actions": {
+        "close": [
+          "k001-m26",
+          "k001-m47",
+          "k001-m48",
+          "k001-m30"
+        ],
+        "open": [
+          "k001-m24",
+          "k001-m29",
+          "k001-m55",
+          "k001-m49"
+        ],
+        "twist": [
+          "k001-m27"
+        ]
+      }
+    },
+    {
+      "id": "k001-j08",
+      "name": "Knee",
+      "type": "Hinge",
+      "actions": {
+        "close": [
+          "k001-m29",
+          "k001-m31"
+        ],
+        "open": [
+          "k001-m28"
+        ],
+        "twist": [
+          "k001-m34"
+        ]
+      }
+    },
+    {
+      "id": "k001-j09",
+      "name": "Ankle",
+      "type": "Hinge",
+      "actions": {
+        "close": [
+          "k001-m31",
+          "k001-m32",
+          "k001-m54"
+        ],
+        "open": [
+          "k001-m33",
+          "k001-m45"
+        ],
+        "twist": [
+          "k001-m43",
+          "k001-m44"
+        ]
+      }
+    }
+  ],
+  "muscles": [
+    {
+      "id": "k001-m01",
+      "name": "Sternocleidomastoid",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft03"
+        ],
+        "primaryFunction": "Rotates and flexes the neck",
+        "spans": [
+          "k001-j01"
+        ]
+      }
+    },
+    {
+      "id": "k001-m02",
+      "name": "Splenius",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01"
+        ],
+        "primaryFunction": "Extends and rotates the head",
+        "spans": [
+          "k001-j01"
+        ]
+      }
+    },
+    {
+      "id": "k001-m03",
+      "name": "Deltoid",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01",
+          "k001-ft02",
+          "k001-ft03"
+        ],
+        "primaryFunction": "Abducts the arm",
+        "spans": [
+          "k001-j02"
+        ]
+      }
+    },
+    {
+      "id": "k001-m04",
+      "name": "Supraspinatus",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01"
+        ],
+        "primaryFunction": "Initiates arm abduction",
+        "spans": [
+          "k001-j02"
+        ]
+      }
+    },
+    {
+      "id": "k001-m05",
+      "name": "Triceps Brachii",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft02",
+          "k001-ft01"
+        ],
+        "primaryFunction": "Extends the elbow",
+        "spans": [
+          "k001-j03"
+        ]
+      }
+    },
+    {
+      "id": "k001-m06",
+      "name": "Biceps Brachii",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft02",
+          "k001-ft01"
+        ],
+        "primaryFunction": "Flexes the elbow",
+        "spans": [
+          "k001-j03"
+        ]
+      }
+    },
+    {
+      "id": "k001-m07",
+      "name": "Brachialis",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01"
+        ],
+        "primaryFunction": "Flexes the elbow",
+        "spans": [
+          "k001-j03"
+        ]
+      }
+    },
+    {
+      "id": "k001-m08",
+      "name": "Brachioradialis",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01"
+        ],
+        "primaryFunction": "Flexes the forearm",
+        "spans": [
+          "k001-j03"
+        ]
+      }
+    },
+    {
+      "id": "k001-m09",
+      "name": "Latissimus Dorsi",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01",
+          "k001-ft02"
+        ],
+        "primaryFunction": "Extends and adducts the arm",
+        "spans": [
+          "k001-j02"
+        ]
+      }
+    },
+    {
+      "id": "k001-m10",
+      "name": "Teres Major",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01"
+        ],
+        "primaryFunction": "Adducts and medially rotates the arm",
+        "spans": [
+          "k001-j02"
+        ]
+      }
+    },
+    {
+      "id": "k001-m11",
+      "name": "Trapezius",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft03",
+          "k001-ft01"
+        ],
+        "primaryFunction": "Elevates, retracts, and depresses the scapula",
+        "spans": [
+          "k001-j01",
+          "k001-j02",
+          "k001-j05"
+        ]
+      }
+    },
+    {
+      "id": "k001-m12",
+      "name": "Levator Scapulae",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01"
+        ],
+        "primaryFunction": "Elevates the scapula",
+        "spans": [
+          "k001-j01",
+          "k001-j02"
+        ]
+      }
+    },
+    {
+      "id": "k001-m13",
+      "name": "Rhomboids",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01"
+        ],
+        "primaryFunction": "Retracts the scapula",
+        "spans": [
+          "k001-j05",
+          "k001-j02"
+        ]
+      }
+    },
+    {
+      "id": "k001-m14",
+      "name": "Infraspinatus",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01"
+        ],
+        "primaryFunction": "Laterally rotates the arm",
+        "spans": [
+          "k001-j02"
+        ]
+      }
+    },
+    {
+      "id": "k001-m15",
+      "name": "Subscapularis",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01"
+        ],
+        "primaryFunction": "Medially rotates the arm",
+        "spans": [
+          "k001-j02"
+        ]
+      }
+    },
+    {
+      "id": "k001-m16",
+      "name": "Pectoralis Major",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft02",
+          "k001-ft01"
+        ],
+        "primaryFunction": "Flexes and adducts the arm",
+        "spans": [
+          "k001-j02"
+        ]
+      }
+    },
+    {
+      "id": "k001-m17",
+      "name": "Pectoralis Minor",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01"
+        ],
+        "primaryFunction": "Depresses the scapula",
+        "spans": [
+          "k001-j02"
+        ]
+      }
+    },
+    {
+      "id": "k001-m18",
+      "name": "Serratus Anterior",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01"
+        ],
+        "primaryFunction": "Protracts the scapula",
+        "spans": [
+          "k001-j02"
+        ]
+      }
+    },
+    {
+      "id": "k001-m19",
+      "name": "Rectus Abdominis",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01"
+        ],
+        "primaryFunction": "Flexes the trunk",
+        "spans": [
+          "k001-j06"
+        ]
+      }
+    },
+    {
+      "id": "k001-m20",
+      "name": "Transverse Abdominis",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01"
+        ],
+        "primaryFunction": "Compresses the abdomen",
+        "spans": [
+          "k001-j06"
+        ]
+      }
+    },
+    {
+      "id": "k001-m21",
+      "name": "Obliques",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01"
+        ],
+        "primaryFunction": "Rotates and laterally flexes the trunk",
+        "spans": [
+          "k001-j06"
+        ]
+      }
+    },
+    {
+      "id": "k001-m22",
+      "name": "Quadratus Lumborum",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01"
+        ],
+        "primaryFunction": "Laterally flexes the spine",
+        "spans": [
+          "k001-j06"
+        ]
+      }
+    },
+    {
+      "id": "k001-m23",
+      "name": "Erector Spinae",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01",
+          "k001-ft03"
+        ],
+        "primaryFunction": "Extends the spine",
+        "spans": [
+          "k001-j05",
+          "k001-j06"
+        ]
+      }
+    },
+    {
+      "id": "k001-m24",
+      "name": "Gluteus Maximus",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft02",
+          "k001-ft01"
+        ],
+        "primaryFunction": "Extends the hip",
+        "spans": [
+          "k001-j07"
+        ]
+      }
+    },
+    {
+      "id": "k001-m25",
+      "name": "Gluteus Medius",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01"
+        ],
+        "primaryFunction": "Abducts the hip",
+        "spans": [
+          "k001-j07"
+        ]
+      }
+    },
+    {
+      "id": "k001-m26",
+      "name": "Iliopsoas",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01"
+        ],
+        "primaryFunction": "Flexes the hip",
+        "spans": [
+          "k001-j07"
+        ]
+      }
+    },
+    {
+      "id": "k001-m27",
+      "name": "Deep External Rotators",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01"
+        ],
+        "primaryFunction": "Laterally rotates the hip",
+        "spans": [
+          "k001-j07"
+        ]
+      }
+    },
+    {
+      "id": "k001-m28",
+      "name": "Quadriceps",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01",
+          "k001-ft03"
+        ],
+        "primaryFunction": "Extends the knee",
+        "spans": [
+          "k001-j08"
+        ]
+      }
+    },
+    {
+      "id": "k001-m29",
+      "name": "Hamstrings",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft02",
+          "k001-ft01"
+        ],
+        "primaryFunction": "Hip extension and knee flexion",
+        "spans": [
+          "k001-j07",
+          "k001-j08"
+        ]
+      }
+    },
+    {
+      "id": "k001-m30",
+      "name": "Adductors",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01"
+        ],
+        "primaryFunction": "Adducts the hip",
+        "spans": [
+          "k001-j07"
+        ]
+      }
+    },
+    {
+      "id": "k001-m31",
+      "name": "Gastrocnemius",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft02",
+          "k001-ft01",
+          "k001-ft03"
+        ],
+        "primaryFunction": "Plantarflexes the ankle",
+        "spans": [
+          "k001-j08",
+          "k001-j09"
+        ]
+      }
+    },
+    {
+      "id": "k001-m32",
+      "name": "Soleus",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft03"
+        ],
+        "primaryFunction": "Plantarflexes the ankle",
+        "spans": [
+          "k001-j09"
+        ]
+      }
+    },
+    {
+      "id": "k001-m33",
+      "name": "Tibialis Anterior",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01",
+          "k001-ft03"
+        ],
+        "primaryFunction": "Dorsiflexes the ankle",
+        "spans": [
+          "k001-j09"
+        ]
+      }
+    },
+    {
+      "id": "k001-m34",
+      "name": "Popliteus",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01",
+          "k001-ft03"
+        ],
+        "primaryFunction": "Medially rotates the tibia",
+        "spans": [
+          "k001-j08"
+        ]
+      }
+    },
+    {
+      "id": "k001-m35",
+      "name": "Flexor Carpi Radialis",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01",
+          "k001-ft03"
+        ],
+        "primaryFunction": "Flexes and abducts the wrist",
+        "spans": [
+          "k001-j04"
+        ]
+      }
+    },
+    {
+      "id": "k001-m36",
+      "name": "Flexor Carpi Ulnaris",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01",
+          "k001-ft03"
+        ],
+        "primaryFunction": "Flexes and adducts the wrist",
+        "spans": [
+          "k001-j04"
+        ]
+      }
+    },
+    {
+      "id": "k001-m37",
+      "name": "Extensor Carpi Radialis Longus",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01",
+          "k001-ft02"
+        ],
+        "primaryFunction": "Extends and abducts the wrist",
+        "spans": [
+          "k001-j03",
+          "k001-j04"
+        ]
+      }
+    },
+    {
+      "id": "k001-m38",
+      "name": "Extensor Carpi Radialis Brevis",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01",
+          "k001-ft02"
+        ],
+        "primaryFunction": "Extends and abducts the wrist",
+        "spans": [
+          "k001-j04"
+        ]
+      }
+    },
+    {
+      "id": "k001-m39",
+      "name": "Extensor Carpi Ulnaris",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01",
+          "k001-ft02"
+        ],
+        "primaryFunction": "Extends and adducts the wrist",
+        "spans": [
+          "k001-j04"
+        ]
+      }
+    },
+    {
+      "id": "k001-m40",
+      "name": "Pronator Teres",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01",
+          "k001-ft02"
+        ],
+        "primaryFunction": "Pronates the forearm and wrist",
+        "spans": [
+          "k001-j03",
+          "k001-j04"
+        ]
+      }
+    },
+    {
+      "id": "k001-m41",
+      "name": "Pronator Quadratus",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01"
+        ],
+        "primaryFunction": "Pronates the forearm and wrist",
+        "spans": [
+          "k001-j04"
+        ]
+      }
+    },
+    {
+      "id": "k001-m42",
+      "name": "Supinator",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01",
+          "k001-ft03"
+        ],
+        "primaryFunction": "Supinates the forearm and wrist",
+        "spans": [
+          "k001-j03",
+          "k001-j04"
+        ]
+      }
+    },
+    {
+      "id": "k001-m43",
+      "name": "Peroneus Longus",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01",
+          "k001-ft03"
+        ],
+        "primaryFunction": "Everts and plantarflexes the ankle",
+        "spans": [
+          "k001-j09"
+        ]
+      }
+    },
+    {
+      "id": "k001-m44",
+      "name": "Peroneus Brevis",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01",
+          "k001-ft03"
+        ],
+        "primaryFunction": "Everts the ankle",
+        "spans": [
+          "k001-j09"
+        ]
+      }
+    },
+    {
+      "id": "k001-m45",
+      "name": "Extensor Digitorum Longus",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01",
+          "k001-ft03"
+        ],
+        "primaryFunction": "Dorsiflexes the ankle and extends the toes",
+        "spans": [
+          "k001-j09"
+        ]
+      }
+    },
+    {
+      "id": "k001-m46",
+      "name": "Teres Minor",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01"
+        ],
+        "primaryFunction": "Laterally rotates and stabilizes the shoulder",
+        "spans": [
+          "k001-j02"
+        ]
+      }
+    },
+    {
+      "id": "k001-m47",
+      "name": "Psoas Major",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01",
+          "k001-ft03"
+        ],
+        "primaryFunction": "Flexes the hip",
+        "spans": [
+          "k001-j07"
+        ]
+      }
+    },
+    {
+      "id": "k001-m48",
+      "name": "Iliacus",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01",
+          "k001-ft03"
+        ],
+        "primaryFunction": "Flexes the hip",
+        "spans": [
+          "k001-j07"
+        ]
+      }
+    },
+    {
+      "id": "k001-m49",
+      "name": "Gluteus Medius",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01",
+          "k001-ft03"
+        ],
+        "primaryFunction": "Abducts and stabilizes the hip",
+        "spans": [
+          "k001-j07"
+        ]
+      }
+    },
+    {
+      "id": "k001-m50",
+      "name": "Gluteus Minimus",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01",
+          "k001-ft03"
+        ],
+        "primaryFunction": "Abducts and stabilizes the hip",
+        "spans": [
+          "k001-j07"
+        ]
+      }
+    },
+    {
+      "id": "k001-m51",
+      "name": "Tensor Fasciae Latae",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01"
+        ],
+        "primaryFunction": "Abducts, flexes, and internally rotates the hip",
+        "spans": [
+          "k001-j07"
+        ]
+      }
+    },
+    {
+      "id": "k001-m52",
+      "name": "Coracobrachialis",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01"
+        ],
+        "primaryFunction": "Flexes and adducts the arm",
+        "spans": [
+          "k001-j02"
+        ]
+      }
+    },
+    {
+      "id": "k001-m53",
+      "name": "Anconeus",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01"
+        ],
+        "primaryFunction": "Extends the elbow",
+        "spans": [
+          "k001-j03"
+        ]
+      }
+    },
+    {
+      "id": "k001-m54",
+      "name": "Sartorius",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01",
+          "k001-ft03"
+        ],
+        "primaryFunction": "Flexes the hip and knee",
+        "spans": [
+          "k001-j07",
+          "k001-j08"
+        ]
+      }
+    },
+    {
+      "id": "k001-m55",
+      "name": "Plantaris",
+      "metadata": {
+        "fibreTypes": [
+          "k001-ft01",
+          "k001-ft02"
+        ],
+        "primaryFunction": "Plantarflexes the ankle",
+        "spans": [
+          "k001-j09"
+        ]
+      }
+    }
+  ]
+}

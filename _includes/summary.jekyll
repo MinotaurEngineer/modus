@@ -1,0 +1,61 @@
+{% assign title = "Summary" %}
+
+<div
+  id='{{ title | downcase }}'
+  class='{{ title | downcase }}'
+  aria-label='{{ title | downcase }}'
+  s1='subgrid pad-block:12 gap:5'>
+  <div s1='subgrid align-items:center'>
+    <time x-data x-text='$store.schedule.time[0]'></time>
+    <span s1='span:3 font-size:7'>Rise</span>
+  </div>
+
+  <div s1='subgrid align-items:center' style='opacity:0.5'>
+    <time x-data x-text='$store.schedule.time[1]'></time>
+    <span s1='span:3 font-size:6'>Activity</span>
+    <span s1='span:2 text-align:end'>walk / yoga</span>
+  </div>
+
+  <div s1='subgrid align-items:center'>
+    <time x-data x-text='$store.schedule.time[2]'></time>
+    <span s1='span:3 font-size:7'>Breakfast</span>
+  </div>
+
+  <div s1='subgrid align-items:center' style='opacity:0.5'>
+    <time x-data x-text='$store.schedule.time[3]'></time>
+    <span s1='span:3 font-size:6'>Snack</span>
+  </div>
+
+  <div s1='subgrid align-items:center'>
+    <time x-data x-text='$store.schedule.time[4]'></time>
+    <span s1='span:3 font-size:7'>Lunch</span>
+  </div>
+
+  <div s1='subgrid align-items:center' style='opacity:0.5'>
+    <time x-data x-text='$store.schedule.time[5]'></time>
+    <span s1='span:3 font-size:6'>Snack</span>
+  </div>
+
+  <div s1='subgrid align-items:center'>
+    <time x-data x-text='$store.schedule.time[6]'></time>
+    <span s1='span:3 font-size:7'>Activity</span>
+    <span s1='span:2 text-align:end'>Training</span>
+  </div>
+
+  <div s1='subgrid align-items:center'>
+    <time x-data x-text='$store.schedule.time[7]'></time>
+    <span s1='span:3 font-size:7'>Supper</span>
+  </div>
+
+  <div s1='subgrid align-items:center'>
+    <time x-data x-text='$store.schedule.time[8]'></time>
+    <span s1='span:3 font-size:7'>6 Cycles</span>
+    <span s1='span:2 text-align:end'>9 hours</span>
+  </div>
+
+  <div s1='subgrid align-items:center' style='opacity:0.5'>
+    <time x-data x-text='$store.schedule.time[9]'></time>
+    <span s1='span:3 font-size:6'>5 Cycles</span>
+    <span s1='span:2 text-align:end'>7.5 hours</span>
+  </div>
+</div>

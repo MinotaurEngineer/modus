@@ -1,0 +1,24 @@
+{% if include.name == 'wordmark' %}
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class='logo'
+    width="{{include.scale | default: 1 | times: 384 | at_most: 1152 | round }}"
+    height="{{include.scale | default: 1 | times: 64 | at_most: 196 | round}}"
+    aria-label='Modus Wordmark'
+  >
+    <title>Modus</title>
+    <use href='#vector-wordmark'/>
+  </svg>
+  {% else %}
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class='icon'
+    width="{{include.scale | default: 1 | times: 24 | at_most: 128 | round}}"
+    height="{{include.scale | default: 1 | times: 24 | at_most: 128 | round}}"
+    aria-label='{{include.name}}'
+  >
+    <title>{{include.name |  default: 'icon'}}</title>
+    <use href='#icon-{{include.name |  default: 'close'}}'/>
+  </svg>
+{% endif %}
+

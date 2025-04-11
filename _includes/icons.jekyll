@@ -1,0 +1,21 @@
+<svg aria-hidden='true' xmlns="http://www.w3.org/2000/svg" style='display: none;'>
+  <defs>
+    <symbol fill="currentColor" id='icon-user-profile' viewBox="0 0 24 24">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M4 4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H4Zm10 5a1 1 0 0 1 1-1h3a1 1 0 1 1 0 2h-3a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h3a1 1 0 1 1 0 2h-3a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h3a1 1 0 1 1 0 2h-3a1 1 0 0 1-1-1Zm-8-5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm2 4a3 3 0 0 0-3 2v1a1 1 0 0 0 1 0h6a1 1 0 0 0 1 0 1 1 0 0 1 0-1 3 3 0 0 0-3-2H8Z" />
+    </symbol>
+    <symbol viewBox="0 0 384 64" id='vector-wordmark' fill="currentColor">
+      <path
+        d="M70 0H45v13L32 0H0v64h13V13h13l12 13v38h13V19l-6-6h19l13 13v38h13V19zM149 0h-39v13h39v38h13V13L149 0Zm-39 13H98v38l12 13h39V51h-39V13ZM227 0h-32l-13 13h39l6 6v19l-13 13h-32l13 13h26l19-19V13L227 0Zm-45 51V0h-12v64h12V51ZM299 0v51h-38V0h-13v51l13 13h25l13-13v13h13V0zM320 26h13l13 12h25l-13-12h-25V13h-13v13Zm64 0V13L371 0h-38v13h38v13h13Zm-51 12h-13v13l13 13h38V51h13V38h-13v13h-38V38Z" />
+    </symbol>
+    <symbol fill="none" viewBox="0 0 24 24" stroke="currentColor"
+      stroke-linecap="round" stroke-width="2" id='icon-menu'>
+      <path d="M5 7h14M5 12h14M5 17h14" />
+    </symbol>
+    <symbol fill="none" viewBox="0 0 24 24" id='icon-close'>
+      <title>Close</title>
+      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+        stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6" />
+    </symbol>
+  </defs>
+</svg>

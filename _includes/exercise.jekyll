@@ -1,0 +1,118 @@
+{% assign title = "Exercise" %}
+
+<div
+  id='{{ title | downcase }}'
+  class='{{ title | downcase }}'
+  aria-label='{{ title | downcase }}'
+  s1='subgrid pad-block:12 row-gap:6'>
+
+  <div s1='subgrid align-items:center'>
+    <span
+      s1='font-size:5'
+      font='mono'
+      style='opacity:0.5'>01</span>
+    <span s1='span:3 font-size:7'>40 &mdash; 126</span>
+    <span s1='span:2 font-size:3 text-align:end'>Active Recovery</span>
+  </div>
+
+  <div s1='subgrid align-items:center'>
+    <span
+      s1='font-size:5'
+      font='mono'
+      style='opacity:0.5'>02</span>
+    <span s1='span:3 font-size:7'>126 &mdash; 145</span>
+    <span s1='span:2 font-size:3 text-align:end'>Aerobic Endurance</span>
+  </div>
+
+  <div s1='subgrid align-items:center'>
+    <span
+      s1='font-size:5'
+      font='mono'
+      style='opacity:0.5'>03</span>
+    <span s1='span:3 font-size:7'>145 &mdash; 158</span>
+    <span s1='span:2 font-size:3 text-align:end'>Aerobic Strength</span>
+  </div>
+
+  <div s1='subgrid align-items:center'>
+    <span
+      s1='font-size:5'
+      font='mono'
+      style='opacity:0.5'>04</span>
+    <span s1='span:3 font-size:7'>158 &mdash; 163</span>
+    <span s1='span:2 font-size:3 text-align:end'>Threshold</span>
+  </div>
+
+  <div s1='subgrid align-items:center'>
+    <span
+      s1='font-size:5'
+      font='mono'
+      style='opacity:0.5'>05</span>
+    <span s1='span:3 font-size:7'>163 &mdash; 172</span>
+    <span s1='span:2 font-size:3 text-align:end'>Anaerobic Endurance</span>
+  </div>
+
+  <div s1='subgrid align-items:center'>
+    <span
+      s1='font-size:5'
+      font='mono'
+      style='opacity:0.5'>06</span>
+    <span s1='span:3 font-size:7'>172 &mdash; 179</span>
+    <span s1='span:2 font-size:3 text-align:end'>Anaerobic Maximum</span>
+  </div>
+</div>
+
+<div s1='subgrid pad-block:12 row-gap:6'>
+  <div s1='subgrid align-items:center'>
+    <span
+      s1='font-size:6 span:1..'
+      s3='span:1'
+      font='mono'
+      style='opacity:0.5'>Zone 01</span>
+    <p s1='span:1..' s3='span:2..'>This zone involves very low-intensity exercise to promote blood flow and recovery without adding stress to the body, typically below 55% of Functional Threshold Power (FTP) or 50 &dash; 60% of maximum heart rate</p>
+  </div>
+
+  <div s1='subgrid align-items:center'>
+    <span
+      s1='font-size:6 span:1..'
+      s3='span:1'
+      font='mono'
+      style='opacity:0.5'>Zone 02</span>
+    <p s1='span:1..' s3='span:2..'>Focused on building stamina, this zone uses primarily fat as fuel, operating at 55 &dash; 75% FTP or 60 &dash; 70% of maximum heart rate, and is ideal for long-duration activities</p>
+  </div>
+
+  <div s1='subgrid align-items:center'>
+    <span
+      s1='font-size:6 span:1..'
+      s3='span:1'
+      font='mono'
+      style='opacity:0.5'>Zone 03</span>
+    <p s1='span:1..' s3='span:2..'>Also known as the "tempo" zone, it challenges both aerobic and anaerobic systems at moderate intensity (76 &dash; 87% FTP), improving muscular endurance and efficiency</p>
+  </div>
+
+  <div s1='subgrid align-items:center'>
+    <span
+      s1='font-size:6 span:1..'
+      s3='span:1'
+      font='mono'
+      style='opacity:0.5'>Zone 04</span>
+    <p s1='span:1..' s3='span:2..'>This high-intensity zone (95 &dash; 105% FTP) pushes you near your lactate threshold, enhancing your ability to sustain hard efforts for extended periods</p>
+  </div>
+
+  <div s1='subgrid align-items:center'>
+    <span
+      font='mono'
+      style='opacity:0.5'
+      s1='font-size:6 span:1..'
+      s3='span:1'>Zone 05</span>
+    <p s1='span:1..' s3='span:2..'>Operating above the lactate threshold (106 &dash; 120% FTP), this zone trains your body to tolerate and clear lactate, improving short-term power output</p>
+  </div>
+
+  <div s1='subgrid align-items:center'>
+    <span
+      s1='font-size:6 span:1..'
+      s3='span:1'
+      font='mono'
+      style='opacity:0.5'>Zone 06</span>
+    <p s1='span:1..' s3='span:2..'>At this all-out effort level (>120% FTP or 90 &dash; 100% max heart rate), energy is derived almost entirely from anaerobic metabolism, boosting sprint power and neuromuscular coordination for very short durations</p>
+  </div>
+</div>
