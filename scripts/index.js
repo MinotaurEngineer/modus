@@ -1,5 +1,3 @@
-const defaultSchedule = '["07:15","07:30", "07:45", "08:00", "08:15", "08:30", "08:45", "09:00", "09:15", "09:30"]';
-
 const KEYS = {
   SCHEDULE: 'schedule',
   LOCATION: 'location'
@@ -80,7 +78,6 @@ function toStimeString(minutes) {
 init()
 
 document.addEventListener('alpine:init', () => {
-
   Alpine.store('schedule', {
     init() {
       try {
@@ -111,22 +108,7 @@ document.addEventListener('alpine:init', () => {
         console.log(error)
       }
     },
-    time: [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-    ]
+    time: []
   })
 
-  Alpine.store('atlas', {
-    joint: 'all',
-    muscle: 'all'
-  })
 }, { passive: true, once: true })
